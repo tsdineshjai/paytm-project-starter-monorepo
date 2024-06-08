@@ -1,4 +1,4 @@
-import { getServerSession } from "next-auth"
+import { getServerSession } from "next-auth" //thi is to get the session object
 import { NextResponse } from "next/server";
 import { authOptions } from "../../lib/auth";
 
