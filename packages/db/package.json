@@ -4,6 +4,7 @@
 	"dependencies": {
 		"@prisma/client": "^5.11.0",
 		"@types/node": "^20.14.2",
+		"bcrypt": "^5.1.1",
 		"ts-node": "^10.9.2"
 	},
 	"prisma": {

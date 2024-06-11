@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"build": "esbuild dist/index.js --bundle --outfile=out.js"
+		"build": "npx esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js",
+		"start": "node dist/index.js",
+		"dev": "npm run build && npm run start"
 	},
 	"keywords": [],
 	"author": "",
@@ -14,5 +16,10 @@
 		"@types/express": "^4.17.21",
 		"esbuild": "^0.21.4",
 		"express": "^4.19.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.2",
+		"ts-node": "^10.9.2",
+		"tslib": "^2.6.3"
 	}
 }
